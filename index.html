@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <header>
+            <span  id="title">Project Planner</span>
+            <button id="AddBtn" onclick="handleForm()">Add Project</button>
+         </header>
+    
+        <main>
+            <section id="Forms">
+                <form id="formss" name="myForm" action="#" method="#">
+                    <input type="text" id="mytitle" placeholder="Enter Project Title" name="title" required>
+                    <input type="text" id="mydesc" placeholder="Enter Project Description" name="desc" required>
+                    <div>
+                        <button id="mySubmitBtn" type="submit" onclick="handleSubmit()">Add</button>
+                        <button type="submit" onsubmit="handleCancel()">Cancel</button>
+                    </div>
+                </form>
+            </section>
+            <section id="ActiveProjects">
+                <div class="ActiveHead"><span>Active Projects</span></div>
+                <h3>No Active Project</h3>
+            
+            </section>
+            <section id="FinishedProjects">
+                <div class="FinishHead"><span>Finished Projects</span></div>
+                <h3>No Finished project</h3>
+                <br>
+                <br>
+            </section>
+         </main>
+     </center>
+     
+
+
+   <script src="script.js"></script> 
+</body>
+</html>
